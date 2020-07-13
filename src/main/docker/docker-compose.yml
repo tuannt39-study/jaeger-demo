@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:1.18.1
+    container_name: socialmon_jaeger
+    hostname: socialmon_jaeger
+    restart: always
+    ports:
+    - 16686:16686
+    - 6831:6831/udp
+    environment:
+      MEMORY_MAX_TRACES: 10000

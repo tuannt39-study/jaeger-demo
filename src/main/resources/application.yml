@@ -1,0 +1,8 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: jaeger-demo
+jaeger:
+  host: 192.168.11.217
+  port: 6831
